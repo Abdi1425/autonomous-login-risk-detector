@@ -5,14 +5,29 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Login Risk Checker</h1>
-    <form id="loginForm">
-        Failed Attempts: <input type="number" id="attempts" required><br>
-        Login Hour (0-23): <input type="number" id="hour" required><br>
-        Location Risk (0-1): <input type="number" step="0.1" id="location" required><br>
-        <button type="button" onclick="submitLogin()">Check Risk</button>
-    </form>
-    <div id="result"></div>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-container">
+            <h1>Login Risk Checker</h1>
+            <form id="loginForm">
+                <label for="attempts">Failed Attempts:</label>
+                <input type="number" id="attempts" required>
+
+                <label for="hour">Login Hour (0-23):</label>
+                <input type="number" id="hour" required>
+
+                <label for="location">Location Risk (0-1):</label>
+                <input type="number" step="0.1" id="location" required>
+
+                <button type="button" onclick="submitLogin()">Check Risk</button>
+            </form>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-container">
+            <div id="result"></div>
+        </div>
+    </div>
 
     <script src="assets/js/app.js"></script>
 </body>

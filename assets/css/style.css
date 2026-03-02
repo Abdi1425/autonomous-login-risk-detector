@@ -1,0 +1,106 @@
+/* General Page Styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Display */
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Decision Colors */
+#result.allow {
+    color: green;
+}
+
+#result.require2fa {
+    color: orange;
+}
+
+#result.block {
+    color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
