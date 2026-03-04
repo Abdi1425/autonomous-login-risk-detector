@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once 'RiskEngine.php';
+require_once './RiskEngine.php';
 
 // Read JSON input safely
 $input = file_get_contents('php://input');
